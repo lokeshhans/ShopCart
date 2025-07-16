@@ -1,0 +1,19 @@
+:root{
+    --blue-gray:#ecf0f1;
+}
+#header{
+    background-color: var(--blue-gray);
+}
+.category-item{
+    border: 1px solid black;
+    padding: .3rem;
+    border-radius: .5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue-gray);
+    min-height: 3rem;
+    min-width: 7rem;
+    box-shadow: 2px 2px 2px var(--blue-gray);
+}

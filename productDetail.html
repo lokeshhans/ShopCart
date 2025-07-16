@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/productDetails.css" />
+  </head>
+  <body>
+    <div id="productDetailsPage" class="product-detail-page">
+      <!-- header -->
+      <nav id="header " class="bg-(--blue-gray) py-6 px-10">
+        <div class="container flex items-cetner justify-between">
+          <div class="logo flex items-center justify-center gap-4">
+            <img
+              class="w-10 h-10s rounded-xl"
+              src="https://img.freepik.com/premium-vector/shopping-cart-logo-icon_567288-1132.jpg"
+              alt=""
+            />
+            <a href="#" class="tracking-widest text-3xl">Shop Cart</a>
+          </div>
+          <div class="user-action flex gap-4 text-xl text-gray-600">
+            <a href="#" class="hover:text-gray-900">Cart</a>
+            <div class="userInfo cursor-pointer hover:text-gray-900">
+              userInfo
+            </div>
+            <div class="userLogout cursor-pointer hover:text-gray-900">
+              Logout
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- container Items -->
+      <div
+        class="product-detail-wrapper flex items-center justify-center m-4 px-6 gap-4 "
+      >
+        <div class="product-img w-[40%] my-10 flex items-center justify-center">
+          <img
+            src="https://www.godaddy.com/resources/wp-content/uploads/2025/02/ecommerce-featured-aO3ClS.tmp_.jpeg?size=3840x0"
+            class="w-[90%] h-[90%] rounded"
+            alt=""
+          />
+        </div> 
+        <div class="product-detail-box flex flex-col items-start justify-center   w-[60%]  p-2 gap-1">
+          <div class="product-details ">
+            <div class="product-name bg-black-300 text-gray-500 tracking-wider  text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl">Samsung</div>
+            <div class="product-price  text-sm md:text-md lg:text-lg xl:text-3xl">Rs. 1000</div>
+            <div class="product-detail">
+              <div class="product-detail-title text-voilet-700 font-bold tracking-wider mt-2 text-sm md:text-md lg:text-lg xl:text-xl ">Title</div>
+              <div class="product-detail-data text-gray-400 text-[1rem] sm:text-[1rem] md:text-sm lg:text-md xl:text-lg mb-2   ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit amet.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              </div>
+            </div>
+          </div>
+          <div class="button flex gap-2 ">
+            <div class="login-btn flex items-center justify-center ">
+              <button
+                type="submit"
+                class="bg-blue-500  rounded-lg border-2 border-black cursor-pointer text-white p-1 text-sm md: text-md lg:text-1xl xl:text-2xl"
+              >
+                Add to Cart
+              </button>
+            </div>
+            <div class="login-btn flex items-center justify-center ">
+              <button
+                type="submit"
+                class="bg-green-700  rounded-lg border-2 border-black cursor-pointer text-white p-1 text-sm md: text-md lg:text-1xl xl:text-2xl"
+              >
+                Go to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

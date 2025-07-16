@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product List</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="/css/login.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/productList.css" />
+</head>
+
+<body>
+  <div id="productList">
+    <!-- navbar -->
+    <nav id="header " class="bg-(--blue-gray) py-6 px-10">
+      <div class="container flex items-cetner justify-between">
+        <div class="logo flex items-center justify-center gap-4">
+          <img class="w-10 h-10s rounded-xl"
+            src="https://img.freepik.com/premium-vector/shopping-cart-logo-icon_567288-1132.jpg" alt="" />
+          <a href="#" class="tracking-widest text-3xl">Shop Cart</a>
+        </div>
+        <div class="user-action flex gap-4 text-xl text-gray-600">
+          <a href="#" class="hover:text-gray-900">Cart</a>
+          <div class="userInfo cursor-pointer hover:text-gray-900">
+            userInfo
+          </div>
+          <div class="userLogout cursor-pointer hover:text-gray-900">
+            Logout
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="container ">
+      <h2 class="product-list-title text-center text-3xl m-2">
+        ALL Products
+      </h2>
+      <div class="flex p-4">
+        <div class="product-list-wrapper  ">
+          <div>
+            <div class="product-list-sidebar flex flex-col gap-2">
+              <div class="product-list-search">Search products</div>
+              <div class="product-list-search-items">
+                <input type="search" class="border-1 rounded" placeholder="search by name" />
+              </div>
+              <div class="sidebar-title text-bold">Categories</div>
+              <div class="category-list flex flex-col mx-4 w-42 gap-1">
+                <a href="#" class="p-2 text-black hover:text-gray-400 border-b-1 bg-sky-100">Electronics</a>
+                <a href="#" class="p-2 text-black hover:text-gray-400 border-b-1 bg-sky-100">Kitchenware</a>
+                <a href="#" class="p-2 text-black hover:text-gray-400 border-b-1 bg-sky-100">Women Outfit</a>
+                <a href="#" class="p-2 text-black hover:text-gray-400 border-b-1 bg-sky-100">sports</a>
+                <a href="#" class="p-2 text-black hover:text-gray-400 bg-sky-100 border-b-1">Men outfit</a>
+              </div>
+              <div class="sidebar-title text-bold">Filter by Price</div>
+              <div class="product-price-filter flex gap-6">
+                <select name="minPrice" id="minPrice" class="border-1 rounded bg-gray-50">
+                  <option value="0">0</option>
+                  <option value="1000">1000</option>
+                  <option value="2000">2000</option>
+                  <option value="5000">5000</option>
+                  <option value="10000">10000</option>
+                  <option value="20000">20000</option>
+                </select>
+                <select name="maxPrice" id="maxPrice" class="border-1 rounded bg-gray-50">
+                  <option value="0">0</option>
+                  <option value="1000">1000</option>
+                  <option value="2000">2000</option>
+                  <option value="5000">5000</option>
+                  <option value="10000">10000</option>
+                  <option value="20000">20000</option>
+                  <option value="100000">100000</option>
+                </select>
+              </div>
+              <div class="product-price-filter flex gap-6">
+                <div>min price</div>
+                <div>max price</div>
+              </div>
+              <div class="product-list-clear">
+                <button type="reset" class="bg-red-400 px-8 py-1 rounded-lg border-1">
+                  Clear Filter
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-list-box   ">
+          <div id="product-list-wrapper" class="flex flex-wrap gap-2 items-center justify-center">
+            <!-- <a href="productDetail.html" target="_blank  " class=" inline-block  shadow-lg rounded p-4">
+              <div >
+                <img
+                src="https://www.godaddy.com/resources/wp-content/uploads/2025/02/ecommerce-featured-aO3ClS.tmp_.jpeg?size=3840x0"
+                class="w-30 h-30 rounded" alt="" /></div>
+              <div class="pro-detail text-center ">Some Product</div>
+              <div class="price text-center">&#8377;1000</div>
+            </a> -->
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="js/productLsit.js"></script>
+</body>
+
+</html>

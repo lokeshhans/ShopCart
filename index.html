@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Cart</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+        --blue-gray:#ecf0f1;
+
+      }
+    </style> -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="home">
+      <!-- Header -->
+      <nav id="header " class="bg-(--blue-gray) py-6 px-4 sm:px-8 md:px-8 lg:px-10 xl:px-14">
+        <div class="container flex items-center justify-between">
+          <div class="logo flex items-center justify-center gap-4">
+            <img
+              class="w-6 sm:w-8 md:w-10 lg:w-12 xl:w-14 rounded-xl "
+              src="https://img.freepik.com/premium-vector/shopping-cart-logo-icon_567288-1132.jpg"
+              alt=""
+            />
+            <a href="#" class="tracking-widest  text-xl sm:text-md md:text-lg lg:text-xl xl:text-2xl  ">Shop Cart</a>
+          </div>
+          <div class="user-action flex gap-4 text-xl sm:text-md md:text-lg lg:text-xl xl:text-2xl text-gray-600 ">
+            <a href="#" class="hover:text-gray-900">Cart</a>
+            <div class="userInfo cursor-pointer hover:text-gray-900">userInfo</div>
+            <div class="userLogout cursor-pointer hover:text-gray-900">Logout</div>
+          </div>
+        </div>
+      </nav>
+      <!-- Main container -->
+      <div id="container" class="container ">
+        <h2 class="text-center text-5xl font-bold mt-[4rem] tracking-[.7rem] px-8">Welcome to Shop Cart</h2>
+        <div id="category-List" class="catogry-list flex items-cetner justify-center gap-2 sm:gap-1 md:gap-2 lg:gap-4 xl:gap-6 mt-6 flex-wrap ">
+            <!-- To Do add catagory child -->
+             <div id="category-item" class="category-item text-[1rem] sm:text-md md:text-lg lg:text-xl xl:text-2xl">
+                <a id="href" href="#">All Products</a>
+             </div>
+        </div>
+        
+        <div class="catogry-title flex  text-3xl  items-cetner justify-center mt-[4rem]">Select items
+            <!-- To Do add catagory child -->
+        </div>
+        
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

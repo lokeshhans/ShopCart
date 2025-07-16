@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/css/login.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/cart.css" />
+  </head>
+  <body>
+    <div id="cart-page " class=" ">
+      <!-- header -->
+      <nav id="header " class="bg-(--blue-gray) py-6 px-10 ">
+        <div class="container flex items-cetner justify-between">
+          <div class="logo flex items-center justify-center gap-4">
+            <img
+              class="w-10 h-10s rounded-xl"
+              src="https://img.freepik.com/premium-vector/shopping-cart-logo-icon_567288-1132.jpg"
+              alt=""
+            />
+            <a href="#" class="tracking-widest text-3xl">Shop Cart</a>
+          </div>
+          <div class="user-action flex gap-4 text-xl text-gray-600">
+            <a href="#" class="hover:text-gray-900">Cart</a>
+            <div class="userInfo cursor-pointer hover:text-gray-900">
+              userInfo
+            </div>
+            <div class="userLogout cursor-pointer hover:text-gray-900">
+              Logout
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- container -->
+      <div class="container">
+        <!-- title -->
+        <div
+          class="cart-title text-center text-2xl font-semibold tracking-wide"
+        >
+          Your Cart
+        </div>
+        <!-- Card cart-wrapper/// -->
+        <div class="cart-wrapper flex gap-4 m-4 px-14  ">
+          <!-- Card -->
+          <div class="product-detail flex flex-col shadow-xl rounded-lg flex-wrap gap-4 p-2 basis-3/4 justify-center ">
+            <div class="order-details-title font-semibold pt-2 text-4xl border-b-1">Order Detail</div>
+            <div class="order-details-product flex   shadow-lg rounded p-2 gap-4">
+              <div class="order-product-img w-[70%]">
+                <img
+                  src="https://www.godaddy.com/resources/wp-content/uploads/2025/02/ecommerce-featured-aO3ClS.tmp_.jpeg?size=3840x0"
+                  class="rounded"
+                  alt=""
+                />
+              </div>
+              <div class="order-product-data  flex   w-full items-center justify-between ">
+                <div class="div">
+                  <div class="text-3xl ">some product</div>
+                <div class="text-2xl">&#8377; 1000</div>
+                </div>
+                <div class="product-action">
+                  <div class="quantity  flex  flex-col gap-2">
+                    <div class="product-quantity text-md font-normal ">Quantity</div>
+                    <form action="" class="border-1 rounded">
+                      <select name="" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                      </select>
+                    </form>
+                  </div>
+                  <div class="remove mt-2 flex items-center justify-center">
+                    <button
+                      type="submit"
+                      class="border-1 border-black px-10 pb-2 rounded-lg bg-red-400 text-white"
+                    >
+                      Remove
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="order-details-product flex   shadow-lg rounded p-2 gap-4">
+              <div class="order-product-img w-[70%]">
+                <img
+                  src="https://www.godaddy.com/resources/wp-content/uploads/2025/02/ecommerce-featured-aO3ClS.tmp_.jpeg?size=3840x0"
+                  class="rounded"
+                  alt=""
+                />
+              </div>
+              <div class="order-product-data  flex   w-full items-center justify-between ">
+                <div class="div">
+                  <div class="text-3xl ">some product</div>
+                <div class="text-2xl">&#8377; 1000</div>
+                </div>
+                <div class="product-action">
+                  <div class="quantity  flex  flex-col gap-2">
+                    <div class="product-quantity text-md font-normal ">Quantity</div>
+                    <form action="" class="border-1 rounded">
+                      <select name="" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                      </select>
+                    </form>
+                  </div>
+                  <div class="remove mt-2 flex items-center justify-center">
+                    <button
+                      type="submit"
+                      class="border-1 border-black px-10 pb-2 rounded-lg bg-red-400 text-white"
+                    >
+                      Remove
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div><div class="order-details-product flex   shadow-lg rounded p-2 gap-4">
+              <div class="order-product-img w-[70%]">
+                <img
+                  src="https://www.godaddy.com/resources/wp-content/uploads/2025/02/ecommerce-featured-aO3ClS.tmp_.jpeg?size=3840x0"
+                  class="rounded"
+                  alt=""
+                />
+              </div>
+              <div class="order-product-data  flex   w-full items-center justify-between ">
+                <div class="div">
+                  <div class="text-3xl ">some product</div>
+                <div class="text-2xl">&#8377; 1000</div>
+                </div>
+                <div class="product-action">
+                  <div class="quantity  flex  flex-col gap-2">
+                    <div class="product-quantity text-md font-normal ">Quantity</div>
+                    <form action="" class="border-1 rounded">
+                      <select name="" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                      </select>
+                    </form>
+                  </div>
+                  <div class="remove mt-2 flex items-center justify-center">
+                    <button
+                      type="submit"
+                      class="border-1 border-black px-10 pb-2 rounded-lg bg-red-400 text-white"
+                    >
+                      Remove
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div><div class="order-details-product flex   shadow-lg rounded p-2 gap-4">
+              <div class="order-product-img w-[70%]">
+                <img
+                  src="https://www.godaddy.com/resources/wp-content/uploads/2025/02/ecommerce-featured-aO3ClS.tmp_.jpeg?size=3840x0"
+                  class="rounded"
+                  alt=""
+                />
+              </div>
+              <div class="order-product-data  flex   w-full items-center justify-between ">
+                <div class="div">
+                  <div class="text-3xl ">some product</div>
+                <div class="text-2xl">&#8377; 1000</div>
+                </div>
+                <div class="product-action">
+                  <div class="quantity  flex  flex-col gap-2">
+                    <div class="product-quantity text-md font-normal ">Quantity</div>
+                    <form action="" class="border-1 rounded">
+                      <select name="" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                      </select>
+                    </form>
+                  </div>
+                  <div class="remove mt-2 flex items-center justify-center">
+                    <button
+                      type="submit"
+                      class="border-1 border-black px-10 pb-2 rounded-lg bg-red-400 text-white"
+                    >
+                      Remove
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div><div class="order-details-product flex   shadow-lg rounded p-2 gap-4">
+              <div class="order-product-img w-[70%]">
+                <img
+                  src="https://www.godaddy.com/resources/wp-content/uploads/2025/02/ecommerce-featured-aO3ClS.tmp_.jpeg?size=3840x0"
+                  class="rounded"
+                  alt=""
+                />
+              </div>
+              <div class="order-product-data  flex   w-full items-center justify-between ">
+                <div class="div">
+                  <div class="text-3xl ">some product</div>
+                <div class="text-2xl">&#8377; 1000</div>
+                </div>
+                <div class="product-action">
+                  <div class="quantity  flex  flex-col gap-2">
+                    <div class="product-quantity text-md font-normal ">Quantity</div>
+                    <form action="" class="border-1 rounded">
+                      <select name="" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                      </select>
+                    </form>
+                  </div>
+                  <div class="remove mt-2 flex items-center justify-center">
+                    <button
+                      type="submit"
+                      class="border-1 border-black px-10 pb-2 rounded-lg bg-red-400 text-white"
+                    >
+                      Remove
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div><div class="order-details-product flex   shadow-lg rounded p-2 gap-4">
+              <div class="order-product-img w-[70%]">
+                <img
+                  src="https://www.godaddy.com/resources/wp-content/uploads/2025/02/ecommerce-featured-aO3ClS.tmp_.jpeg?size=3840x0"
+                  class="rounded"
+                  alt=""
+                />
+              </div>
+              <div class="order-product-data  flex   w-full items-center justify-between ">
+                <div class="div">
+                  <div class="text-3xl ">some product</div>
+                <div class="text-2xl">&#8377; 1000</div>
+                </div>
+                <div class="product-action">
+                  <div class="quantity  flex  flex-col gap-2">
+                    <div class="product-quantity text-md font-normal ">Quantity</div>
+                    <form action="" class="border-1 rounded">
+                      <select name="" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                      </select>
+                    </form>
+                  </div>
+                  <div class="remove mt-2 flex items-center justify-center">
+                    <button
+                      type="submit"
+                      class="border-1 border-black px-10 pb-2 rounded-lg bg-red-400 text-white"
+                    >
+                      Remove
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div><div class="order-details-product flex   shadow-lg rounded p-2 gap-4">
+              <div class="order-product-img w-[70%]">
+                <img
+                  src="https://www.godaddy.com/resources/wp-content/uploads/2025/02/ecommerce-featured-aO3ClS.tmp_.jpeg?size=3840x0"
+                  class="rounded"
+                  alt=""
+                />
+              </div>
+              <div class="order-product-data  flex   w-full items-center justify-between ">
+                <div class="div">
+                  <div class="text-3xl ">some product</div>
+                <div class="text-2xl">&#8377; 1000</div>
+                </div>
+                <div class="product-action">
+                  <div class="quantity  flex  flex-col gap-2">
+                    <div class="product-quantity text-md font-normal ">Quantity</div>
+                    <form action="" class="border-1 rounded">
+                      <select name="" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                      </select>
+                    </form>
+                  </div>
+                  <div class="remove mt-2 flex items-center justify-center">
+                    <button
+                      type="submit"
+                      class="border-1 border-black px-10 pb-2 rounded-lg bg-red-400 text-white"
+                    >
+                      Remove
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+          <!-- price detail -->
+          <div class="price-detail flex flex-col gap-4  w-1/4  p-2 self-start sticky top-0 ">
+            <div class="product-detail-box shadow-lg rounded">
+              <div class="product-detail-title text-center  bg-gray-100 rounded">Price detail</div>
+              <div class="price-detail-data flex justify-between gap-2 px-2 ">
+                <div class="price">Price:</div>
+                <div class="product-price ">1000</div>
+              </div>
+              <div class="price-detail-data flex justify-between gap-2 px-2 ">
+                <div class="price">Discount:</div>
+                <div class="product-price">100</div>
+              </div>
+              <div class="price-detail-data flex justify-between gap-2 px-2 ">
+                <div class="price">Delivery Charge:</div>
+                <div class="product-price">Free</div>
+              </div>
+              <div class="price-detail-data flex justify-between gap-2 px-2  ">
+                <div class="price">Total:</div>
+                <div class="product-price ">900</div>
+              </div>
+            </div>
+            <div class=" flex flex-col gap-8 ">
+              <a href="productList.html"
+                ><button
+                  type="submit"
+                  class="border-1 border-black px-2 rounded-lg bg-sky-500 text-white w-full "
+                >
+                  Continue Shoping
+                </button></a
+              >
+              <a href="checkoutlist.html"
+                ><button
+                  type="submit"
+                  class="border-1 border-black px-2 rounded-lg bg-blue-800 text-white w-full"
+                >
+                  Checkout
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

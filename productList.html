@@ -12,6 +12,9 @@
 </head>
 
 <body>
+  <div id="loader" class="loader">
+      <div></div>
+  </div>
   <div id="productList">
     <!-- navbar -->
     <nav id="header " class="bg-(--blue-gray) py-6 px-10">
@@ -45,12 +48,9 @@
                 <input type="search" class="border-1 rounded" placeholder="search by name" />
               </div>
               <div class="sidebar-title text-bold">Categories</div>
-              <div class="category-list flex flex-col mx-4 w-42 gap-1">
-                <a href="#" class="p-2 text-black hover:text-gray-400 border-b-1 bg-sky-100">Electronics</a>
-                <a href="#" class="p-2 text-black hover:text-gray-400 border-b-1 bg-sky-100">Kitchenware</a>
-                <a href="#" class="p-2 text-black hover:text-gray-400 border-b-1 bg-sky-100">Women Outfit</a>
-                <a href="#" class="p-2 text-black hover:text-gray-400 border-b-1 bg-sky-100">sports</a>
-                <a href="#" class="p-2 text-black hover:text-gray-400 bg-sky-100 border-b-1">Men outfit</a>
+              <div id="category-list" class="category-list flex flex-col mx-4 w-42 gap-1">
+                <a href="productList.html" class="p-2 text-black hover:text-gray-400 border-b-1 bg-sky-100">All Products</a>
+                
               </div>
               <div class="sidebar-title text-bold">Filter by Price</div>
               <div class="product-price-filter flex gap-6">

@@ -17,3 +17,31 @@
     min-width: 7rem;
     box-shadow: 2px 2px 2px var(--blue-gray);
 }
+.loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+}
+.loader > div{
+    border: 5px solid black;
+    border-top: 5px solid white;
+    height: 4rem;
+    width: 4rem;
+    border-bottom: 5px solid white;
+    border-radius: 50%;
+    animation: spiner 2s linear infinite;
+
+}
+@keyframes spiner {
+    from{
+        transform: rotate(0deg);
+    }    
+    to{
+        transform: rotate(360deg);
+    }
+}

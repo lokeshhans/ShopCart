@@ -15,8 +15,7 @@ async function populateCategory (){
         categoryItem.classList.add("category-item","text-[1rem]","sm:text-md", "md:text-lg", "lg:text-xl", "xl:text-2xl"); 
         aLink.classList.add("capitalize");
         categoryItem.appendChild(aLink);
-        aLink.href = "#"
-
+        aLink.href = `productList.html?category=${category}`;
         aLink.textContent = category;
         categoryList.appendChild(categoryItem);
     });

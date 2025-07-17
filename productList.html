@@ -39,7 +39,7 @@
       <div class="flex p-4">
         <div class="product-list-wrapper  ">
           <div>
-            <div class="product-list-sidebar flex flex-col gap-2">
+            <div class="product-list-sidebar flex items-center flex-col gap-2">
               <div class="product-list-search">Search products</div>
               <div class="product-list-search-items">
                 <input type="search" class="border-1 rounded" placeholder="search by name" />
@@ -56,20 +56,20 @@
               <div class="product-price-filter flex gap-6">
                 <select name="minPrice" id="minPrice" class="border-1 rounded bg-gray-50">
                   <option value="0">0</option>
-                  <option value="1000">1000</option>
-                  <option value="2000">2000</option>
-                  <option value="5000">5000</option>
-                  <option value="10000">10000</option>
-                  <option value="20000">20000</option>
+                  <option value="10">10</option>
+                  <option value="20">20</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                  <option value="200">200</option>
                 </select>
                 <select name="maxPrice" id="maxPrice" class="border-1 rounded bg-gray-50">
                   <option value="0">0</option>
+                  <option value="10">10</option>
+                  <option value="20">20</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                  <option value="200">200</option>
                   <option value="1000">1000</option>
-                  <option value="2000">2000</option>
-                  <option value="5000">5000</option>
-                  <option value="10000">10000</option>
-                  <option value="20000">20000</option>
-                  <option value="100000">100000</option>
                 </select>
               </div>
               <div class="product-price-filter flex gap-6">
@@ -77,7 +77,12 @@
                 <div>max price</div>
               </div>
               <div class="product-list-clear">
-                <button type="reset" class="bg-red-400 px-8 py-1 rounded-lg border-1">
+                <button id="searched"  class="bg-red-400 px-8 py-1 rounded-lg border-1">
+                  search
+                </button>
+              </div>
+              <div class="product-list-clear">
+                <button id="Clear"   class="bg-red-400 px-8 py-1 rounded-lg border-1">
                   Clear Filter
                 </button>
               </div>

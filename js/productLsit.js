@@ -71,11 +71,11 @@ document.addEventListener("DOMContentLoaded", async ()=>{
         })
     }   
     async function downloadContentAndPopulate() {
-        
-        await populateProducts(false);
-        await populateCategory();
+        Promise.all([populateProducts(false), populateCategory()])
+       .then(()=>{   
         const loader = document.getElementById("loader");
         loader.style.display = "none";
+       })
     }
     downloadContentAndPopulate()
 

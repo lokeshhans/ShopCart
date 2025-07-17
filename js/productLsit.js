@@ -1,15 +1,27 @@
-document.addEventListener("DOMContentLoaded", ()=>{
-    async function fetchProducts (){
+document.addEventListener("DOMContentLoaded", async ()=>{
+    async function fetchProducts  (){
         const response = await axios.get("https://fakestoreapi.com/products")
         console.log(response.data)
         return response.data;
     };
 
+    async function fetchProductByCategory(category){
+        const response = await axios.get(`https://fakestoreapi.com/products/category/${category}`);
+        console.log(response.data)
+        return response.data;
+    }
+    const downloadProducts = await fetchProducts();
     async function populateProducts(flag, customProducts) {
         let products = customProducts;
+        const queryParams = new URLSearchParams(window.location.search);
+        const queryParamsObject  = Object.fromEntries(queryParams.entries());
         if (flag == false) {
-            products = await fetchProducts();
-        }
+            if(queryParamsObject['category']){
+                products = await fetchProductByCategory(queryParamsObject['category']);
+            }else { 
+                products = await fetchProducts();
+            }
+        };
         const productList = document.getElementById("product-list-wrapper");
         productList.classList.add("flex", "flex-wrap", "gap-2", "items-center", "justify-center");
         products.forEach(product => {
@@ -42,11 +54,11 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 
     const filterSearch = document.getElementById("searched")
-    filterSearch.addEventListener("click", async ()=>{
+    filterSearch.addEventListener("click",  ()=>{
         const productList = document.getElementById("product-list-wrapper");
         const MinPrice = Number(document.getElementById("minPrice").value);
         const MaxPrice = Number(document.getElementById("maxPrice").value);
-        const products = await fetchProducts();
+        const products =  downloadProducts;
         const filteredProducts = products.filter(product => product.price >= MinPrice && product.price <= MaxPrice);
         productList.innerHTML = "";
         populateProducts(true, filteredProducts);

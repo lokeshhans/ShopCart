@@ -33,26 +33,21 @@
         </div>
       </nav>
       <!-- container Items -->
-      <div
-        class="product-detail-wrapper flex items-center justify-center m-4 px-6 gap-4 "
-      >
-        <div class="product-img w-[40%] my-10 flex items-center justify-center">
-          <img
+      <div class="product-detail-wrapper flex items-center justify-center m-4 px-6 gap-4">
+        <div class="product-img w-[22%] my-10 flex items-center justify-center relative">
+          <img id="product-img" 
             src="https://www.godaddy.com/resources/wp-content/uploads/2025/02/ecommerce-featured-aO3ClS.tmp_.jpeg?size=3840x0"
-            class="w-[90%] h-[90%] rounded"
+            class="w-[90%] h-[60%] rounded"
             alt=""
           />
         </div> 
-        <div class="product-detail-box flex flex-col items-start justify-center   w-[60%]  p-2 gap-1">
-          <div class="product-details ">
-            <div class="product-name bg-black-300 text-gray-500 tracking-wider  text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl">Samsung</div>
-            <div class="product-price  text-sm md:text-md lg:text-lg xl:text-3xl">Rs. 1000</div>
-            <div class="product-detail">
-              <div class="product-detail-title text-voilet-700 font-bold tracking-wider mt-2 text-sm md:text-md lg:text-lg xl:text-xl ">Title</div>
-              <div class="product-detail-data text-gray-400 text-[1rem] sm:text-[1rem] md:text-sm lg:text-md xl:text-lg mb-2   ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Lorem ipsum dolor sit amet.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        <div id="product-detail-box" class="product-detail-box flex flex-col items-start justify-center   w-[60%]  p-2 gap-1">
+          <div id="product-details" class="product-details ">
+            <div id="product-name" class="product-name bg-black-300 text-gray-500 tracking-wider  text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl"></div>
+            <div id="product-price" class="product-price  text-sm md:text-md lg:text-lg xl:text-3xl"></div>
+            <div id="product-detail" class="product-detail">
+              <div id="product-detail-title" class="product-detail-title text-voilet-700 font-bold tracking-wider mt-2 text-sm md:text-md lg:text-lg xl:text-xl ">Title</div>
+              <div id="product-detail-data" class="product-detail-data text-gray-400 text-[1rem] sm:text-[1rem] md:text-sm lg:text-md xl:text-lg mb-2   ">
               </div>
             </div>
           </div>
@@ -77,5 +72,8 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/productDetail.js"></script>
   </body>
 </html>

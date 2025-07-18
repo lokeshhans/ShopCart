@@ -21,8 +21,7 @@ document.addEventListener("DOMContentLoaded", async ()=>{
     const downloadProducts = await fetchProducts();
     async function populateProducts(flag, customProducts) {
         let products = customProducts;
-        const queryParams = new URLSearchParams(window.location.search);
-        const queryParamsObject  = Object.fromEntries(queryParams.entries());
+        const queryParamsObject  =getQueryParams() ;
         if (flag == false) {
             if(queryParamsObject['category']){
                 products = await fetchProductByCategory(queryParamsObject['category']);
@@ -34,7 +33,7 @@ document.addEventListener("DOMContentLoaded", async ()=>{
         productList.classList.add("flex", "flex-wrap", "gap-2", "items-center", "justify-center");
         products.forEach(product => {
            let alink =  document.createElement("a");
-           alink.href ="productDetail.html";
+           alink.href =`productDetail.html?id=${product.id}`;
            alink.target="_blank";
            alink.classList.add("inline-block",  "shadow-lg", "rounded", "p-4","flex","items-center","justify-center");
            let productImageDiv = document.createElement("div");

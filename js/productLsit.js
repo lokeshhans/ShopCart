@@ -72,8 +72,7 @@ document.addEventListener("DOMContentLoaded", async ()=>{
     async function downloadContentAndPopulate() {
         Promise.all([populateProducts(false), populateCategory()])
        .then(()=>{   
-        const loader = document.getElementById("loader");
-        loader.style.display = "none";
+        removeLoader();
        })
     }
     downloadContentAndPopulate()

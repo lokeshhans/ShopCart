@@ -7,8 +7,7 @@ async function fetchCategories(){
 
 async function populateCategory (){
     const cateogries = await fetchCategories(); 
-    const laoder  =document.getElementById("loader");
-    laoder.style.display= "none";
+    removeLoader();
     const categoryList  = document.getElementById("category-List");
     cateogries.forEach(category => {
         const categoryItem  = document.createElement("div");
